@@ -1,0 +1,266 @@
+/* 
+    header color                        #212121 
+    text color                          #757575 
+
+    main background color               #FFFFFF 
+    secondary background color          #F5F5F5
+    order button active color           #188CE8
+
+    accent color                        #2196F3
+    white color                         #FFFFFF
+    black color                         #000000 
+
+    background order service footer     #2F303A
+    text color contact footer           rgba(255, 255, 255, 0.6)
+*/
+
+:root {
+    --title-color: #212121;
+    --text-color: #757575;
+    --main-background-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --background-order-service-footer: #2F303A;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --order-btn-actice: #188CE8;
+}
+
+body {
+    background-color: var( --main-background-color);
+    color: var(--text-color);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+/* STUDIO STYLES */
+
+
+/* Header styles */
+
+.logo {
+    color: var(--black-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-first {
+    color: var(--accent-color);
+}
+
+.nav-menu-link {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.menu-nav .active,
+.menu-nav a:hover,
+.menu-nav a:focus {
+    color: var(--accent-color);
+}
+
+.contacts-link {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-color);
+}
+
+
+/* Order a order-service */
+
+.order-service {
+    background-color: var(--background-order-service-footer);
+}
+
+.main-title {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.order-btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+    background: var(--order-btn-actice);
+}
+
+
+/* Features styles */
+
+.feature-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.feature-description {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Services styles*/
+
+.services-title,
+.team-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.14;
+    text-align: center;
+}
+
+
+/* Team styles */
+
+.team {
+    background-color: var(--secondary-background-color);
+}
+
+.team-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.14;
+    text-align: center;
+}
+
+.employee-card {
+    background-color: var(--main-background-color);
+}
+
+.employee-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.employee-description {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: var(--background-order-service-footer)
+}
+
+.logo-footer {
+    color: var(--white-color);
+}
+
+.postal-address {
+    color: var(--white-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer-contact {
+    color: var(--footer-contact-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.postal-address:hover,
+.postal-address:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--accent-color);
+}
+
+
+/* PORTFOLION STILES */
+
+
+/* Buttons styles */
+
+.filter-btn {
+    color: var(--title-color);
+    background-color: var(--secondary-background-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+
+/* Galery projects styles */
+
+.project-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-description {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
