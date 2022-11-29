@@ -232,7 +232,18 @@ footer {
     background-color: var(--background-order-service-footer)
 }
 
+footer>.conteiner {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-contacts {
+    margin-top: 20px;
+}
+
 .logo-footer {
+    margin: 0;
     color: var(--white-color);
 }
 
@@ -248,6 +259,10 @@ footer {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+}
+
+.contact-item+.contact-item {
+    margin-top: 9px;
 }
 
 .postal-address:hover,
