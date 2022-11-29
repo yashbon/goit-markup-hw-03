@@ -58,7 +58,8 @@ h3 {
 }
 
 .section {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
