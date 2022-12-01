@@ -61,7 +61,8 @@ img {
 }
 
 .container {
-    width: 1200px;
+    /* width: 1200px; */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -376,16 +377,20 @@ footer>.container {
 
 .gallery {
     flex-wrap: wrap;
-    margin: -15px;
+    /* margin: -15px; */
+    gap: 30px;
 }
 
 .project {
-    margin: 15px;
+    /* margin: 15px; */
+    flex-basis: calc(100% / 3 - 30px);
 }
 
 .project-description {
     padding: 20px 24px;
-    border: 1px solid var(--project-border-color);
+    border-left: 1px solid var(--project-border-color);
+    border-right: 1px solid var(--project-border-color);
+    border-bottom: 1px solid var(--project-border-color);
 }
 
 .project-title {
