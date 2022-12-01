@@ -15,6 +15,7 @@
     text color contact footer           rgba(255, 255, 255, 0.6)
 
     project border color                #EEEEEE
+    width gap                           30px
 */
 
 :root {
@@ -30,6 +31,7 @@
     --footer-contact-color: rgba(255, 255, 255, 0.6);
     --order-btn-actice: #188CE8;
     --project-border-color: #EEEEEE;
+    --width-gap: 30px;
 }
 
 body {
@@ -61,7 +63,6 @@ img {
 }
 
 .container {
-    /* width: 1200px; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -377,13 +378,11 @@ footer>.container {
 
 .gallery {
     flex-wrap: wrap;
-    /* margin: -15px; */
     gap: 30px;
 }
 
 .project {
-    /* margin: 15px; */
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - var(--width-gap));
 }
 
 .project-description {
